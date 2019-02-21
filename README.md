@@ -1,5 +1,10 @@
 # react-html2pdf
-covert html to pdf
+Covert html to pdf & print
+
+
+## Demo & Examples
+
+Live demo: [react-html2pdf](https://5c6e67526bfdff00099d6adc--react-paper.netlify.com/demo/react-html2pdf)
 
 ## Install package
 ```bash
@@ -12,14 +17,14 @@ $ npm i react-html2pdf
 import { Preview, print } from 'react-html2pdf';
 
 //render
-    <Preview id={'jsx-template'} >
-        <p>adsf</p>
-    </Preview>
-    <button onClick={()=>print('a', 'jsx-template')}> print</button>
+<Preview id={'jsx-template'} >
+    <p>adsf</p>
+</Preview>
+<button onClick={()=>print('a', 'jsx-template')}> print</button>
 ```
 ## Example
 
-Check full example in the [example](https://github.com/sanpyaelin/react-html2pdf/tree/master/example/index.js) folder.
+Check full example in the [example](https://github.com/sanpyaelin/react-html2pdf/blob/master/examples/index.js) folder.
 
 
 ## License

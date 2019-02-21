@@ -53,7 +53,7 @@ var Preview = function (_React$Component) {
         null,
         _reactDom2.default.createPortal(_react2.default.createElement(
           'div',
-          { style: { opacity: 0 } },
+          { style: { opacity: 0, position: 'absolute', top: 0 } },
           _react2.default.createElement(
             _page2.default,
             { id: id },
