@@ -1,9 +1,6 @@
 # react-html2pdf
 Covert html to pdf & print
 
-
-## Demo & Examples
-
 Live demo: [react-html2pdf](https://5c6e67526bfdff00099d6adc--react-paper.netlify.com/demo/react-html2pdf)
 
 ## Install package
