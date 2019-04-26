@@ -43,9 +43,11 @@ var Preview = function (_React$Component) {
     key: 'render',
     value: function render() {
       var _props = this.props,
-          html = _props.html,
-          id = _props.id,
-          children = _props.children;
+        html = _props.html,
+        id = _props.id,
+        children = _props.children,
+        width = _props.width,
+        height = _props.height;
 
       var htmlDoc = { __html: html };
       return _react2.default.createElement(
@@ -56,7 +58,7 @@ var Preview = function (_React$Component) {
           { style: { opacity: 0, position: 'absolute', top: 0 } },
           _react2.default.createElement(
             _page2.default,
-            { id: id },
+            { id: id, width: width, height: height },
             htmlDoc && _react2.default.createElement(Base, { html: htmlDoc }),
             children
           )
