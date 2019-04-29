@@ -6,7 +6,7 @@ import template from './template.html';
 const App = () => (
     <div>
         <Preview id={'html-template'} html={template} width={'330'} height={'210'} />
-        <button onClick={() => print('a', 'html-template', 'l')}> print landscape</button>
+        <button onClick={() => print('a', 'html-template', 'l', 'output')}> print landscape</button>
         <Preview id={'jsx-template'} width={'210'} height={'297'} >
             <p>adsf</p>
         </Preview>

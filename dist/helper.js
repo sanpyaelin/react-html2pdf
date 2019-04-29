@@ -19,6 +19,9 @@ function print() {
     var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'document';
     var id = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'root';
     var orientation = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'p';
+    var saveOrOutPut = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'save';
+
+    console.log('output', saveOrOutPut);
 
     var element = document.querySelector('#' + id);
     if (!element) {
@@ -30,6 +33,10 @@ function print() {
         var imgData = canvas.toDataURL('image/png');
         var pdf = new _jspdf2.default(orientation);
         pdf.addImage(imgData, 'PNG', 0, 0);
-        pdf.save(name + '.pdf');
+        if (saveOrOutPut === 'save') {
+            pdf.save(name + '.pdf');
+        } else {
+            pdf.output('dataurlnewwindow', name + '.pdf');
+        }
     });
 }
